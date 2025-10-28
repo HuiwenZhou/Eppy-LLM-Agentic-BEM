@@ -1,0 +1,122 @@
+{
+  "baseline": {
+    "cooling_total_W": 1967.92,
+    "heating_total_W": 892.7900000000001
+  },
+  "runs": [
+    {
+      "run_name": "modified_Building_Orientation_v3_run_20251023_1639",
+      "cooling_baseline_W": 1967.92,
+      "cooling_modified_W": 944.8900000000001,
+      "heating_baseline_W": 892.7900000000001,
+      "heating_modified_W": 891.74,
+      "cooling_delta_W": -1023.03,
+      "heating_delta_W": -1.0500000000000682,
+      "cooling_delta_%": -51.985344932720835,
+      "heating_delta_%": -0.11760884418509035,
+      "sensitivity_score": 51.985344932720835
+    },
+    {
+      "run_name": "modified_Building_Orientation_v2_run_20251023_1639",
+      "cooling_baseline_W": 1967.92,
+      "cooling_modified_W": 1612.51,
+      "heating_baseline_W": 892.7900000000001,
+      "heating_modified_W": 893.82,
+      "cooling_delta_W": -355.4100000000001,
+      "heating_delta_W": 1.0299999999999727,
+      "cooling_delta_%": -18.060185373389164,
+      "heating_delta_%": 0.11536867572441141,
+      "sensitivity_score": 18.060185373389164
+    },
+    {
+      "run_name": "modified_Roof_Insulation_Thickness_run_20251023_1639",
+      "cooling_baseline_W": 1967.92,
+      "cooling_modified_W": 2106.14,
+      "heating_baseline_W": 892.7900000000001,
+      "heating_modified_W": 886.4300000000001,
+      "cooling_delta_W": 138.2199999999998,
+      "heating_delta_W": -6.360000000000014,
+      "cooling_delta_%": 7.023659498353581,
+      "heating_delta_%": -0.7123735704925025,
+      "sensitivity_score": 7.023659498353581
+    },
+    {
+      "run_name": "modified_Window_to_Wall_Ratio_v1_run_20251023_1640",
+      "cooling_baseline_W": 1967.92,
+      "cooling_modified_W": 1975.3600000000001,
+      "heating_baseline_W": 892.7900000000001,
+      "heating_modified_W": 860.25,
+      "cooling_delta_W": 7.440000000000055,
+      "heating_delta_W": -32.54000000000008,
+      "cooling_delta_%": 0.378064148949147,
+      "heating_delta_%": -3.644754085507238,
+      "sensitivity_score": 3.644754085507238
+    },
+    {
+      "run_name": "modified_Window_to_Wall_Ratio_v2_run_20251023_1640",
+      "cooling_baseline_W": 1967.92,
+      "cooling_modified_W": 1973.1999999999998,
+      "heating_baseline_W": 892.7900000000001,
+      "heating_modified_W": 869.8299999999999,
+      "cooling_delta_W": 5.279999999999745,
+      "heating_delta_W": -22.96000000000015,
+      "cooling_delta_%": 0.2683035895767991,
+      "heating_delta_%": -2.5717133928471587,
+      "sensitivity_score": 2.5717133928471587
+    },
+    {
+      "run_name": "modified_Window_to_Wall_Ratio_v3_run_20251023_1640",
+      "cooling_baseline_W": 1967.92,
+      "cooling_modified_W": 1970.6399999999999,
+      "heating_baseline_W": 892.7900000000001,
+      "heating_modified_W": 880.68,
+      "cooling_delta_W": 2.7199999999998,
+      "heating_delta_W": -12.110000000000127,
+      "cooling_delta_%": 0.13821700069107484,
+      "heating_delta_%": -1.3564220029346348,
+      "sensitivity_score": 1.3564220029346348
+    },
+    {
+      "run_name": "modified_Building_Orientation_v1_run_20251023_1639",
+      "cooling_baseline_W": 1967.92,
+      "cooling_modified_W": 1967.92,
+      "heating_baseline_W": 892.7900000000001,
+      "heating_modified_W": 892.7900000000001,
+      "cooling_delta_W": 0.0,
+      "heating_delta_W": 0.0,
+      "cooling_delta_%": 0.0,
+      "heating_delta_%": 0.0,
+      "sensitivity_score": 0.0
+    },
+    {
+      "run_name": "modified_Exterior_Wall_Solar_Absorptance_run_20251023_1639",
+      "cooling_baseline_W": 1967.92,
+      "cooling_modified_W": 1967.92,
+      "heating_baseline_W": 892.7900000000001,
+      "heating_modified_W": 892.7900000000001,
+      "cooling_delta_W": 0.0,
+      "heating_delta_W": 0.0,
+      "cooling_delta_%": 0.0,
+      "heating_delta_%": 0.0,
+      "sensitivity_score": 0.0
+    },
+    {
+      "run_name": "modified_Roof_Thermal_Absorptance_run_20251023_1640",
+      "cooling_baseline_W": 1967.92,
+      "cooling_modified_W": 1967.92,
+      "heating_baseline_W": 892.7900000000001,
+      "heating_modified_W": 892.7900000000001,
+      "cooling_delta_W": 0.0,
+      "heating_delta_W": 0.0,
+      "cooling_delta_%": 0.0,
+      "heating_delta_%": 0.0,
+      "sensitivity_score": 0.0
+    }
+  ],
+  "most_sensitive_parameter": {
+    "name": "Building_Orientation_v3",
+    "score_%": 51.985344932720835
+  },
+  "summary_text": "**Quantitative Sensitivity Analysis Summary**\n\n- Baseline total cooling load: **1967.92 W**\n- Baseline total heating load: **892.79 W**\n\nAmong all modified simulations, **Building_Orientation_v3** showed the highest sensitivity with an overall change of **51.99%**. This indicates that the parameter has the strongest quantitative impact on the user's optimization goal.\n\nThe complete ranked sensitivity list is available in the attached CSV/JSON files.",
+  "note": "sensitivity_score = max(|ΔCooling%|, |ΔHeating%|)"
+}

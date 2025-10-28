@@ -1,0 +1,117 @@
+==========================================================================================
+SMART RULE-BASED IDF MODIFICATION SUMMARY
+==========================================================================================
+
+Total Parameters: 5
+Total IDF Files Generated: 9
+Timestamp: 20251023_160026
+
+Parameter Type Distribution:
+  • CONTINUOUS: 3 variants
+  • ORIENTATION: 3 variants
+  • WINDOW_GEOMETRY: 3 variants
+
+==========================================================================================
+
+
+==========================================================================================
+Parameter: Building_Orientation
+Type: ORIENTATION | Category: Building
+Object: Unnamed_0
+==========================================================================================
+ [Variant 1]
+  Field: North_Axis
+  Original: 0.0
+  Modified: 0
+  Change: +0.0%
+  Strategy: Cardinal direction 0°
+  File: modified_Building_Orientation_v1.idf
+
+ [Variant 2]
+  Field: North_Axis
+  Original: 0.0
+  Modified: 90
+  Change: +0.0%
+  Strategy: Cardinal direction 90°
+  File: modified_Building_Orientation_v2.idf
+
+ [Variant 3]
+  Field: North_Axis
+  Original: 0.0
+  Modified: 180
+  Change: +0.0%
+  Strategy: Cardinal direction 180°
+  File: modified_Building_Orientation_v3.idf
+
+
+==========================================================================================
+Parameter: Window_to_Wall_Ratio
+Type: WINDOW_GEOMETRY | Category: Window
+Object: Unnamed_1
+==========================================================================================
+ [Variant 1]
+  Field: Vertices (scaled)
+  Original: 100% size
+  Modified: 70% size
+  Change: -51.0%
+  Strategy: WWR reduction: Scale window to 70% of original size
+  File: modified_Window_to_Wall_Ratio_v1.idf
+
+ [Variant 2]
+  Field: Vertices (scaled)
+  Original: 100% size
+  Modified: 80% size
+  Change: -36.0%
+  Strategy: WWR reduction: Scale window to 80% of original size
+  File: modified_Window_to_Wall_Ratio_v2.idf
+
+ [Variant 3]
+  Field: Vertices (scaled)
+  Original: 100% size
+  Modified: 90% size
+  Change: -19.0%
+  Strategy: WWR reduction: Scale window to 90% of original size
+  File: modified_Window_to_Wall_Ratio_v3.idf
+
+
+==========================================================================================
+Parameter: Exterior_Wall_Solar_Absorptance
+Type: CONTINUOUS | Category: Material
+Object: Unnamed_0
+==========================================================================================
+
+  Field: Solar_Absorptance
+  Original: 0.6
+  Modified: 0.35
+  Change: -41.7%
+  Strategy: Midpoint of suggested range [0.2, 0.5]
+  File: modified_Exterior_Wall_Solar_Absorptance.idf
+
+
+==========================================================================================
+Parameter: Roof_Thermal_Absorptance
+Type: CONTINUOUS | Category: Material
+Object: Unnamed_2
+==========================================================================================
+
+  Field: Thermal_Absorptance
+  Original: 0.9
+  Modified: 0.35
+  Change: -61.1%
+  Strategy: Midpoint of suggested range [0.2, 0.5]
+  File: modified_Roof_Thermal_Absorptance.idf
+
+
+==========================================================================================
+Parameter: Roof_Insulation_Thickness
+Type: CONTINUOUS | Category: Material
+Object: Unnamed_0
+==========================================================================================
+
+  Field: Thickness
+  Original: 0.0869
+  Modified: 0.15
+  Change: +72.6%
+  Strategy: Midpoint of suggested range [0.1, 0.2]
+  File: modified_Roof_Insulation_Thickness.idf
+

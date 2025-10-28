@@ -1,0 +1,21 @@
+{
+  "summary": {
+    "major_differences": [
+      {
+        "parameter": "Time Not Comfortable Based on Simple ASHRAE 55-2004",
+        "baseline_value": "3861.00",
+        "modified_value": "3861.00",
+        "impact": "no change",
+        "interpretation": "The time not comfortable remains the same, indicating that thermal comfort levels were maintained despite modifications."
+      },
+      {
+        "parameter": "Time Setpoint Not Met During Occupied Cooling",
+        "baseline_value": "0.00",
+        "modified_value": "0.00",
+        "impact": "no change",
+        "interpretation": "The cooling setpoint was consistently met in both simulations, suggesting effective cooling strategies were maintained."
+      }
+    ],
+    "overall_trend": "The modifications did not adversely affect thermal comfort while aiming to reduce cooling loads."
+  }
+}

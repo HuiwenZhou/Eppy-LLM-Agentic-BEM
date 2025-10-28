@@ -1,0 +1,71 @@
+{
+  "goal": "reduce cooling load while maintaining comfort",
+  "parameters_to_modify": {
+    "Building_Orientation": {
+      "idf_object": "BUILDING",
+      "category": "Building",
+      "object_name": "Unnamed_0",
+      "field": "North_Axis",
+      "original_value": 0.0,
+      "expected_effect": "adjust",
+      "suggested_range": [
+        0,
+        180
+      ],
+      "unit": "deg"
+    },
+    "Window_to_Wall_Ratio": {
+      "idf_object": "FENESTRATIONSURFACE:DETAILED",
+      "category": "Window",
+      "object_name": "Unnamed_1",
+      "field": "Multiplier",
+      "original_value": 1.0,
+      "expected_effect": "decrease",
+      "suggested_range": [
+        0.5,
+        0.9
+      ],
+      "unit": ""
+    },
+    "Exterior_Wall_Solar_Absorptance": {
+      "idf_object": "MATERIAL",
+      "category": "Material",
+      "object_name": "Unnamed_0",
+      "field": "Solar_Absorptance",
+      "original_value": 0.6,
+      "expected_effect": "decrease",
+      "suggested_range": [
+        0.2,
+        0.5
+      ],
+      "unit": ""
+    },
+    "Roof_Thermal_Absorptance": {
+      "idf_object": "MATERIAL",
+      "category": "Material",
+      "object_name": "Unnamed_2",
+      "field": "Thermal_Absorptance",
+      "original_value": 0.9,
+      "expected_effect": "decrease",
+      "suggested_range": [
+        0.2,
+        0.5
+      ],
+      "unit": ""
+    },
+    "Roof_Insulation_Thickness": {
+      "idf_object": "MATERIAL",
+      "category": "Material",
+      "object_name": "Unnamed_0",
+      "field": "Thickness",
+      "original_value": 0.0869,
+      "expected_effect": "increase",
+      "suggested_range": [
+        0.1,
+        0.2
+      ],
+      "unit": "m"
+    }
+  },
+  "total_parameters": 5
+}

@@ -1,0 +1,126 @@
+Program Version,EnergyPlus, Version 25.1.0-68a4a7c774, YMD=2025.10.23 16:39,
+   ** Warning ** Timestep: Requested number (2) is less than the suggested minimum of 4.
+   **   ~~~   ** Please see entry for Timestep in Input/Output Reference for discussion of considerations.
+   ************* Beginning Zone Sizing Calculations
+   ** Warning ** SetUpDesignDay: Entered DesignDay Barometric Pressure=100141 differs by more than 10% from Standard Barometric Pressure=81198.
+   **   ~~~   ** ...occurs in DesignDay=SUMMER DESIGN DAY IN UNTITLED (O1-O1:31-12) JUL, Standard Pressure (based on elevation) will be used.
+   ** Warning ** GetSurfaceData: Construction PROJECT PARTITION of interzone surface BLOCK1:LIVINGROOM_PARTITION_2_0_0 does not have the same materials in the reverse order as the construction PROJECT PARTITION_REV of adjacent surface BLOCK1:BATHROOM_PARTITION_6_0_10000
+   **   ~~~   ** or the properties of the reversed layers are not correct due to differing layer front and back side values
+   **   ~~~   ** ...but Nominal U values are similar, diff=[0.0000] ... simulation proceeds.
+   **   ~~~   ** ...if the two zones are expected to have significantly different temperatures, the proper "reverse" construction should be created.
+   **   ~~~   ** ...this problem for this pair will not be reported again.
+   ** Warning ** GetSurfaceData: Entered Zone Floor Area(s) differ more than 5% from the sum of the Space Floor Area(s).
+   **   ~~~   ** ...use Output:Diagnostics,DisplayExtraWarnings; to show more details on individual zones.
+   ************* Note that the following warning(s) may/will occur if you have not enclosed your zone completely.
+   ** Warning ** Entered Zone Volumes differ from calculated zone volume(s).
+   **   ~~~   ** ...use Output:Diagnostics,DisplayExtraWarnings; to show more details on individual zones.
+   ** Warning ** CheckUsedConstructions: There are 6 nominally unused constructions in input.
+   **   ~~~   ** For explicit details on each unused construction, use Output:Diagnostics,DisplayExtraWarnings;
+   ** Warning ** GetInternalHeatGains: People="PEOPLE BLOCK1:LIVINGROOM" has comfort related schedules but no thermal comfort model selected.
+   **   ~~~   ** If schedules are specified for air velocity, clothing insulation, and/or work efficiency but no thermal comfort
+   **   ~~~   ** thermal comfort model is selected, the schedules will be listed as unused schedules in the .err file.
+   **   ~~~   ** To avoid these errors, select a valid thermal comfort model or eliminate these schedules in the PEOPLE input.
+   ** Warning ** GetInternalHeatGains: People="PEOPLE BLOCK1:BATHROOM" has comfort related schedules but no thermal comfort model selected.
+   **   ~~~   ** If schedules are specified for air velocity, clothing insulation, and/or work efficiency but no thermal comfort
+   **   ~~~   ** thermal comfort model is selected, the schedules will be listed as unused schedules in the .err file.
+   **   ~~~   ** To avoid these errors, select a valid thermal comfort model or eliminate these schedules in the PEOPLE input.
+   ** Warning ** GetInternalHeatGains: People="PEOPLE BLOCK1:CLOSET" has comfort related schedules but no thermal comfort model selected.
+   **   ~~~   ** If schedules are specified for air velocity, clothing insulation, and/or work efficiency but no thermal comfort
+   **   ~~~   ** thermal comfort model is selected, the schedules will be listed as unused schedules in the .err file.
+   **   ~~~   ** To avoid these errors, select a valid thermal comfort model or eliminate these schedules in the PEOPLE input.
+   ** Warning ** SetUpDesignDay: Entered DesignDay Barometric Pressure=100141 differs by more than 10% from Standard Barometric Pressure=81198.
+   **   ~~~   ** ...occurs in DesignDay=SUMMER DESIGN DAY IN UNTITLED (O1-O1:31-12) AUG, Standard Pressure (based on elevation) will be used.
+   ** Warning ** SetUpDesignDay: Entered DesignDay Barometric Pressure=100141 differs by more than 10% from Standard Barometric Pressure=81198.
+   **   ~~~   ** ...occurs in DesignDay=SUMMER DESIGN DAY IN UNTITLED (O1-O1:31-12) SEP, Standard Pressure (based on elevation) will be used.
+   ** Warning ** SetUpDesignDay: Entered DesignDay Barometric Pressure=100141 differs by more than 10% from Standard Barometric Pressure=81198.
+   **   ~~~   ** ...occurs in DesignDay=WINTER DESIGN DAY IN UNTITLED (O1-O1:31-12), Standard Pressure (based on elevation) will be used.
+   ** Warning ** Temperature out of range [-100. to 200.] (PsyPsatFnTemp)
+   **   ~~~   **  Routine=CalcPurchAirLoads, During Sizing, Environment=WINTER DESIGN DAY IN UNTITLED (O1-O1:31-12), at Simulation time=01/15 24:00 - 24:30
+   **   ~~~   **  Input Temperature=-1673.05
+   ** Warning ** Output:Meter: invalid Key Name="NATURALGAS:FACILITY" - not found.
+   ** Warning ** Output:Meter: invalid Key Name="NATURALGAS:FACILITY" - not found.
+   ** Warning ** Output:Meter: invalid Key Name="NATURALGAS:FACILITY" - not found.
+   ** Warning ** Output:Meter: invalid Key Name="NATURALGAS:FACILITY" - not found.
+   ************* Testing Individual Branch Integrity
+   ************* All Branches passed integrity testing
+   ************* Testing Individual Supply Air Path Integrity
+   ************* All Supply Air Paths passed integrity testing
+   ************* Testing Individual Return Air Path Integrity
+   ************* All Return Air Paths passed integrity testing
+   ************* No node connection errors were found.
+   ************* Beginning Simulation
+   ************* Simulation Error Summary *************
+   ** Warning ** The following Report Variables were requested but not generated -- check.rdd file
+   **   ~~~   ** Either the IDF did not contain these elements, the variable name is misspelled,
+   **   ~~~   ** or the requested variable is an advanced output which requires Output : Diagnostics, DisplayAdvancedReportVariables;
+   ************* Key=*, VarName=ZONE VENTILATION CURRENT DENSITY AIR CHANGE RATE, Frequency=Hourly
+   ************* Key=*, VarName=ZONE VENTILATION CURRENT DENSITY AIR CHANGE RATE, Frequency=Daily
+   ************* Key=*, VarName=ZONE VENTILATION CURRENT DENSITY AIR CHANGE RATE, Frequency=Monthly
+   ************* Key=*, VarName=ZONE VENTILATION CURRENT DENSITY AIR CHANGE RATE, Frequency=RunPeriod
+   ************* Key=*, VarName=ZONE VENTILATION FAN ELECTRICITY ENERGY, Frequency=Hourly
+   ************* Key=*, VarName=FAN ELECTRICITY RATE, Frequency=Hourly
+   ************* Key=*, VarName=ZONE RADIANT HVAC HEATING RATE, Frequency=Hourly
+   ************* Key=*, VarName=ZONE VENTILATION FAN ELECTRICITY ENERGY, Frequency=Daily
+   ************* Key=*, VarName=FAN ELECTRICITY RATE, Frequency=Daily
+   ************* Key=*, VarName=ZONE RADIANT HVAC HEATING RATE, Frequency=Daily
+   ************* Key=*, VarName=ZONE VENTILATION FAN ELECTRICITY ENERGY, Frequency=Monthly
+   ************* Key=*, VarName=FAN ELECTRICITY RATE, Frequency=Monthly
+   ************* Key=*, VarName=ZONE RADIANT HVAC HEATING RATE, Frequency=Monthly
+   ************* Key=*, VarName=ZONE VENTILATION FAN ELECTRICITY ENERGY, Frequency=RunPeriod
+   ************* Key=*, VarName=FAN ELECTRICITY RATE, Frequency=RunPeriod
+   ************* Key=*, VarName=ZONE RADIANT HVAC HEATING RATE, Frequency=RunPeriod
+   ************* Key=*, VarName=ZONE VENTILATION SENSIBLE HEAT LOSS ENERGY, Frequency=Hourly
+   ************* Key=*, VarName=ZONE VENTILATION SENSIBLE HEAT GAIN ENERGY, Frequency=Hourly
+   ************* Key=*, VarName=ZONE MIXING SENSIBLE HEAT LOSS ENERGY, Frequency=Hourly
+   ************* Key=*, VarName=ZONE MIXING SENSIBLE HEAT GAIN ENERGY, Frequency=Hourly
+   ************* Key=*, VarName=ZONE MIXING STANDARD DENSITY VOLUME FLOW RATE, Frequency=Hourly
+   ************* Key=*, VarName=ZONE ELECTRIC EQUIPMENT TOTAL HEATING RATE, Frequency=Hourly
+   ************* Key=*, VarName=ZONE GAS EQUIPMENT TOTAL HEATING RATE, Frequency=Hourly
+   ************* Key=*, VarName=ZONE VENTILATION SENSIBLE HEAT LOSS ENERGY, Frequency=Daily
+   ************* Key=*, VarName=ZONE VENTILATION SENSIBLE HEAT GAIN ENERGY, Frequency=Daily
+   ************* Key=*, VarName=ZONE MIXING SENSIBLE HEAT LOSS ENERGY, Frequency=Daily
+   ************* Key=*, VarName=ZONE MIXING SENSIBLE HEAT GAIN ENERGY, Frequency=Daily
+   ************* Key=*, VarName=ZONE MIXING STANDARD DENSITY VOLUME FLOW RATE, Frequency=Daily
+   ************* Key=*, VarName=ZONE ELECTRIC EQUIPMENT TOTAL HEATING RATE, Frequency=Daily
+   ************* Key=*, VarName=ZONE GAS EQUIPMENT TOTAL HEATING RATE, Frequency=Daily
+   ************* Key=*, VarName=ZONE VENTILATION SENSIBLE HEAT LOSS ENERGY, Frequency=Monthly
+   ************* Key=*, VarName=ZONE VENTILATION SENSIBLE HEAT GAIN ENERGY, Frequency=Monthly
+   ************* Key=*, VarName=ZONE MIXING SENSIBLE HEAT LOSS ENERGY, Frequency=Monthly
+   ************* Key=*, VarName=ZONE MIXING SENSIBLE HEAT GAIN ENERGY, Frequency=Monthly
+   ************* Key=*, VarName=ZONE MIXING STANDARD DENSITY VOLUME FLOW RATE, Frequency=Monthly
+   ************* Key=*, VarName=ZONE ELECTRIC EQUIPMENT TOTAL HEATING RATE, Frequency=Monthly
+   ************* Key=*, VarName=ZONE GAS EQUIPMENT TOTAL HEATING RATE, Frequency=Monthly
+   ************* Key=*, VarName=ZONE VENTILATION SENSIBLE HEAT LOSS ENERGY, Frequency=RunPeriod
+   ************* Key=*, VarName=ZONE VENTILATION SENSIBLE HEAT GAIN ENERGY, Frequency=RunPeriod
+   ************* Key=*, VarName=ZONE MIXING SENSIBLE HEAT LOSS ENERGY, Frequency=RunPeriod
+   ************* Key=*, VarName=ZONE MIXING SENSIBLE HEAT GAIN ENERGY, Frequency=RunPeriod
+   ************* Key=*, VarName=ZONE MIXING STANDARD DENSITY VOLUME FLOW RATE, Frequency=RunPeriod
+   ************* Key=*, VarName=ZONE ELECTRIC EQUIPMENT TOTAL HEATING RATE, Frequency=RunPeriod
+   ************* Key=*, VarName=ZONE GAS EQUIPMENT TOTAL HEATING RATE, Frequency=RunPeriod
+   ************* There are 1 unused objects in input.
+   ************* Use Output:Diagnostics,DisplayUnusedObjects; to see them.
+   ************* There are 11 unused schedules in input.
+   ************* There are 3 unused week schedules in input.
+   ************* There are 2 unused day schedules in input.
+   ************* Use Output:Diagnostics,DisplayUnusedSchedules; to see them.
+   *************
+   ************* ===== Recurring Error Summary =====
+   ************* The following recurring error messages occurred.
+   *************
+   *************  ** Warning ** Temperature out of range [-100. to 200.] (PsyPsatFnTemp)
+   *************  **   ~~~   **   This error occurred 3 total times;
+   *************  **   ~~~   **   during Warmup 0 times;
+   *************  **   ~~~   **   during Sizing 3 times.
+   *************  **   ~~~   **   Max=-1673.052856 C  Min=-84296.882812 C
+   *************
+   *************
+   ************* ===== Final Error Summary =====
+   ************* The following error categories occurred.  Consider correcting or noting.
+   ************* Nominally Unused Constructions
+   ************* ..The nominally unused constructions warning is provided to alert you to potential conditions that can cause
+   ************* ..extra time during simulation. Each construction is calculated by the algorithm indicated in the HeatBalanceAlgorithm
+   ************* ..object. You may remove the constructions indicated (when you use the DisplayExtraWarnings option).
+   *************
+   ************* EnergyPlus Warmup Error Summary. During Warmup: 0 Warning; 0 Severe Errors.
+   ************* EnergyPlus Sizing Error Summary. During Sizing: 11 Warning; 0 Severe Errors.
+   ************* EnergyPlus Completed Successfully-- 19 Warning; 0 Severe Errors; Elapsed Time=00hr 00min  4.68sec

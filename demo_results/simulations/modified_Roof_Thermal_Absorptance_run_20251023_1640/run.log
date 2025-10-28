@@ -1,0 +1,126 @@
+EnergyPlus Starting
+EnergyPlus, Version 25.1.0-68a4a7c774, YMD=2025.10.23 16:40
+Initializing Response Factors
+Calculating CTFs for "PROJECT GROUND FLOOR"
+Calculating CTFs for "COPY OF ROOF INS ENTIRELY ABOVE DECK R-4O (7.O) U-O.O25 (O.142)"
+Calculating CTFs for "PROJECT PARTITION"
+Calculating CTFs for "PROJECT PARTITION_REV"
+Calculating CTFs for "COPY OF WALL MASS R-23.O (4.O5) U-O.O41 (O.23)"
+Calculating CTFs for "PROJECT EXTERNAL DOOR"
+Initializing Window Optical Properties
+Initializing Solar Calculations
+Allocate Solar Module Arrays
+Initializing Zone and Enclosure Report Variables
+Initializing Surface (Shading) Report Variables
+Computing Interior Solar Absorption Factors
+Determining Shadowing Combinations
+Computing Window Shade Absorption Factors
+Proceeding with Initializing Solar Calculations
+Initializing Surfaces
+Initializing Outdoor environment for Surfaces
+Setting up Surface Reporting Variables
+Initializing Temperature and Flux Histories
+Initializing Window Shading
+Computing Interior Absorption Factors
+Computing Interior Diffuse Solar Absorption Factors
+Initializing Solar Heat Gains
+Initializing Internal Heat Gains
+Initializing Interior Solar Distribution
+Initializing Interior Convection Coefficients
+Gathering Information for Predefined Reporting
+Completed Initializing Surface Heat Balance
+Calculate Outside Surface Heat Balance
+Calculate Inside Surface Heat Balance
+Calculate Air Heat Balance
+Initializing HVAC
+Warming up
+Warming up
+Warming up
+Warming up
+Warming up
+Warming up
+Performing Zone Sizing Simulation
+...for Sizing Period: #1 SUMMER DESIGN DAY IN UNTITLED (O1-O1:31-12) JUL
+Warming up
+Warming up
+Warming up
+Warming up
+Warming up
+Warming up
+Performing Zone Sizing Simulation
+...for Sizing Period: #2 SUMMER DESIGN DAY IN UNTITLED (O1-O1:31-12) AUG
+Warming up
+Warming up
+Warming up
+Warming up
+Warming up
+Warming up
+Performing Zone Sizing Simulation
+...for Sizing Period: #3 SUMMER DESIGN DAY IN UNTITLED (O1-O1:31-12) SEP
+Warming up
+Warming up
+Warming up
+Warming up
+Warming up
+Warming up
+Performing Zone Sizing Simulation
+...for Sizing Period: #4 WINTER DESIGN DAY IN UNTITLED (O1-O1:31-12)
+Adjusting Air System Sizing
+Adjusting Standard 62.1 Ventilation Sizing
+Initializing Simulation
+Reporting Surfaces
+Beginning Primary Simulation
+Initializing New Environment Parameters
+Warming up {1}
+Warming up {2}
+Warming up {3}
+Warming up {4}
+Warming up {5}
+Warming up {6}
+Starting Simulation at 01/01/2017 for UNTITLED (O1-O1:31-12)
+Updating Shadowing Calculations, Start Date=01/21/2017
+Continuing Simulation at 01/21/2017 for UNTITLED (O1-O1:31-12)
+Updating Shadowing Calculations, Start Date=02/10/2017
+Continuing Simulation at 02/10/2017 for UNTITLED (O1-O1:31-12)
+Updating Shadowing Calculations, Start Date=03/02/2017
+Continuing Simulation at 03/02/2017 for UNTITLED (O1-O1:31-12)
+Updating Shadowing Calculations, Start Date=03/22/2017
+Continuing Simulation at 03/22/2017 for UNTITLED (O1-O1:31-12)
+Updating Shadowing Calculations, Start Date=04/11/2017
+Continuing Simulation at 04/11/2017 for UNTITLED (O1-O1:31-12)
+Updating Shadowing Calculations, Start Date=05/01/2017
+Continuing Simulation at 05/01/2017 for UNTITLED (O1-O1:31-12)
+Updating Shadowing Calculations, Start Date=05/21/2017
+Continuing Simulation at 05/21/2017 for UNTITLED (O1-O1:31-12)
+Updating Shadowing Calculations, Start Date=06/10/2017
+Continuing Simulation at 06/10/2017 for UNTITLED (O1-O1:31-12)
+Updating Shadowing Calculations, Start Date=06/30/2017
+Continuing Simulation at 06/30/2017 for UNTITLED (O1-O1:31-12)
+Updating Shadowing Calculations, Start Date=07/20/2017
+Continuing Simulation at 07/20/2017 for UNTITLED (O1-O1:31-12)
+Updating Shadowing Calculations, Start Date=08/09/2017
+Continuing Simulation at 08/09/2017 for UNTITLED (O1-O1:31-12)
+Updating Shadowing Calculations, Start Date=08/29/2017
+Continuing Simulation at 08/29/2017 for UNTITLED (O1-O1:31-12)
+Updating Shadowing Calculations, Start Date=09/18/2017
+Continuing Simulation at 09/18/2017 for UNTITLED (O1-O1:31-12)
+Updating Shadowing Calculations, Start Date=10/08/2017
+Continuing Simulation at 10/08/2017 for UNTITLED (O1-O1:31-12)
+Updating Shadowing Calculations, Start Date=10/28/2017
+Continuing Simulation at 10/28/2017 for UNTITLED (O1-O1:31-12)
+Updating Shadowing Calculations, Start Date=11/17/2017
+Continuing Simulation at 11/17/2017 for UNTITLED (O1-O1:31-12)
+Updating Shadowing Calculations, Start Date=12/07/2017
+Continuing Simulation at 12/07/2017 for UNTITLED (O1-O1:31-12)
+Updating Shadowing Calculations, Start Date=12/27/2017
+Continuing Simulation at 12/27/2017 for UNTITLED (O1-O1:31-12)
+Writing tabular output file results using comma format.
+Writing tabular output file results using HTML format.
+ ReadVarsESO program starting.
+ ReadVars Run Time=00hr 00min  3.20sec
+ ReadVarsESO program completed successfully.
+ ReadVarsESO program starting.
+ ReadVars Run Time=00hr 00min  0.38sec
+ ReadVarsESO program completed successfully.
+EnergyPlus Run Time=00hr 00min  4.58sec
+EnergyPlus Completed Successfully.

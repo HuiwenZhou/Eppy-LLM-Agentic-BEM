@@ -1,0 +1,16 @@
+ ReadVarsESO
+ processing:C:\Users\huiwe\eppy_crewai_project\outputs\modified_idfs\modified_Window_to_Wall_Ratio_v1.rvi
+ input file:C:\Users\huiwe\eppy_crewai_project\outputs\simulations\modified_Window_to_Wall_Ratio_v1_run_20251023_1640\eplusout.eso
+ output file:C:\Users\huiwe\eppy_crewai_project\outputs\simulations\modified_Window_to_Wall_Ratio_v1_run_20251023_1640\eplusout.csv
+ getting all vars from:C:\Users\huiwe\eppy_crewai_project\outputs\simulations\modified_Window_to_Wall_Ratio_v1_run_20251023_1640\eplusout.eso
+  number variables requested for output=         404
+ ReadVars Run Time=00hr 00min  3.19sec
+ ReadVarsESO program completed successfully.
+ ReadVarsESO
+ processing:C:\Users\huiwe\eppy_crewai_project\outputs\modified_idfs\modified_Window_to_Wall_Ratio_v1.mvi
+ input file:C:\Users\huiwe\eppy_crewai_project\outputs\simulations\modified_Window_to_Wall_Ratio_v1_run_20251023_1640\eplusout.mtr
+ output file:C:\Users\huiwe\eppy_crewai_project\outputs\simulations\modified_Window_to_Wall_Ratio_v1_run_20251023_1640\eplusmtr.csv
+ getting all vars from:C:\Users\huiwe\eppy_crewai_project\outputs\simulations\modified_Window_to_Wall_Ratio_v1_run_20251023_1640\eplusout.mtr
+  number variables requested for output=          48
+ ReadVars Run Time=00hr 00min  0.38sec
+ ReadVarsESO program completed successfully.

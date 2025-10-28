@@ -1,0 +1,16 @@
+ ReadVarsESO
+ processing:C:\Users\huiwe\eppy_crewai_project\outputs\modified_idfs\modified_Building_Orientation_v3.rvi
+ input file:C:\Users\huiwe\eppy_crewai_project\outputs\simulations\modified_Building_Orientation_v3_run_20251023_1639\eplusout.eso
+ output file:C:\Users\huiwe\eppy_crewai_project\outputs\simulations\modified_Building_Orientation_v3_run_20251023_1639\eplusout.csv
+ getting all vars from:C:\Users\huiwe\eppy_crewai_project\outputs\simulations\modified_Building_Orientation_v3_run_20251023_1639\eplusout.eso
+  number variables requested for output=         404
+ ReadVars Run Time=00hr 00min  3.28sec
+ ReadVarsESO program completed successfully.
+ ReadVarsESO
+ processing:C:\Users\huiwe\eppy_crewai_project\outputs\modified_idfs\modified_Building_Orientation_v3.mvi
+ input file:C:\Users\huiwe\eppy_crewai_project\outputs\simulations\modified_Building_Orientation_v3_run_20251023_1639\eplusout.mtr
+ output file:C:\Users\huiwe\eppy_crewai_project\outputs\simulations\modified_Building_Orientation_v3_run_20251023_1639\eplusmtr.csv
+ getting all vars from:C:\Users\huiwe\eppy_crewai_project\outputs\simulations\modified_Building_Orientation_v3_run_20251023_1639\eplusout.mtr
+  number variables requested for output=          48
+ ReadVars Run Time=00hr 00min  0.39sec
+ ReadVarsESO program completed successfully.

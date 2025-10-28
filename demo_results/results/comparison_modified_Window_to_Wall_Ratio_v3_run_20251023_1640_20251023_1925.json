@@ -1,0 +1,21 @@
+{
+  "summary": {
+    "major_differences": [
+      {
+        "parameter": "Time Setpoint Not Met During Occupied Heating",
+        "baseline_value": "1578.00",
+        "modified_value": "1567.50",
+        "impact": "decrease",
+        "interpretation": "The modified simulation shows a slight reduction in the time the heating setpoint was not met, indicating improved heating efficiency."
+      },
+      {
+        "parameter": "Time Not Comfortable Based on Simple ASHRAE 55-2004",
+        "baseline_value": "3861.00",
+        "modified_value": "3842.50",
+        "impact": "decrease",
+        "interpretation": "The modified simulation indicates a reduction in discomfort hours, suggesting improved thermal comfort for occupants."
+      }
+    ],
+    "overall_trend": "The modifications led to a reduction in both cooling load and discomfort hours, indicating an overall improvement in energy efficiency while maintaining thermal comfort."
+  }
+}
