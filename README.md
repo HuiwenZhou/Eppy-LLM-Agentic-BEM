@@ -10,7 +10,7 @@ It integrates **EnergyPlus v25.1**, **Eppy**, and **LLM agents** (GPT-5 / OpenAI
 ---
 
 ## 📂 Repository Structure
-
+```
 Eppy-LLM-Agentic-BEM/
 │
 ├── LICENSE
@@ -41,7 +41,7 @@ Eppy-LLM-Agentic-BEM/
 └── llm/
 ├── eppy_openai_llm.py
 └── init.py
-
+```
 
 ---
 
