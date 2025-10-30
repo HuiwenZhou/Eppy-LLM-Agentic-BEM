@@ -3,7 +3,7 @@
 EppyOpenAILLM — OpenAI-compatible LLM wrapper for CrewAI
 Author: Huiwen Zhou (PhD Project)
 Description:
-  Provides a lightweight, OpenAI-only version of the CborgOpenAILLM wrapper
+  Provides a lightweight, OpenAI-only version
   used in the Agentic-BEM project. It standardizes the LLM interface and
   ensures consistent return format for CrewAI agents and tools.
 """

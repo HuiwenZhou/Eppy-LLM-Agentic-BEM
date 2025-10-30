@@ -42,7 +42,6 @@ Eppy-LLM-Agentic-BEM/
 ├── eppy_openai_llm.py
 └── init.py
 
-yaml
 
 ---
 
@@ -53,7 +52,7 @@ yaml
 | Tool | Version | Purpose |
 |------|----------|----------|
 | **Python** | ≥ 3.11 | Core runtime |
-| **EnergyPlus** | **v25.1** | Building simulation engine |
+| **EnergyPlus** | v25.1 | Building simulation engine |
 | **Eppy** | ≥ 0.5.64 | Python API for IDF editing |
 | **OpenAI Python SDK** | ≥ 1.40 | For LLM agent inference |
 | **Pandas / Matplotlib** | ≥ 2.2 | Data analysis and visualization |
@@ -115,10 +114,12 @@ The workflow will:
 4. Compare simulation outputs.
 5. Perform sensitivity and impact analysis.
 
-All results are saved in outputs/:
+All results are saved in outputs:
 
 📁 outputs/modified_idfs/ — generated variant models
+
 📁 outputs/simulations/ — EnergyPlus results for baseline and variants
+
 📁 outputs/results/ — LLM comparison reports & sensitivity summaries
 
 > ⚠️ **Note:**  
