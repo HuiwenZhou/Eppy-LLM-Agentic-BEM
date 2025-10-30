@@ -1,4 +1,4 @@
-# 🧠 Eppy-LLM-Agentic-BEM  
+#  Eppy-LLM-Agentic-BEM  
 **An Agentic Workflow for LLM-Assisted Building Energy Modeling Using EnergyPlus**
 
 This repository implements the core workflow described in the paper:  
@@ -45,9 +45,9 @@ Eppy-LLM-Agentic-BEM/
 
 ---
 
-## ⚙️ 1. Environment Setup
+##  1. Environment Setup
 
-### 🧩 Prerequisites
+###  Prerequisites
 
 | Tool | Version | Purpose |
 |------|----------|----------|
@@ -59,7 +59,7 @@ Eppy-LLM-Agentic-BEM/
 
 ---
 
-### 🧱 Installation Steps
+###  Installation Steps
 
 #### 1️⃣ Install **EnergyPlus v25.1**
 
@@ -92,12 +92,12 @@ pip install -r requirements.txt
 ```powershell
 setx OPENAI_API_KEY "sk-xxxxxx..."
 ```
-## 🚀 2. Running the Workflow
+##  2. Running the Workflow
 The workflow consists of **three core Agents** (1 → 3c) that together perform semantic interpretation, deterministic modification, and simulation analysis.
 
 Each Agent can be run **individually** or **automatically** through main.py.
 
-### 🧠 Full Pipeline Execution
+###  Full Pipeline Execution
 ```bash
 python src/main.py
 ```
@@ -128,8 +128,8 @@ All results are saved in outputs:
 > If you want to re-run your own case from scratch, you can safely delete all files and folders inside `outputs/` before execution.  
 > The workflow will automatically regenerate them during runtime.
 
-## 🧩 3. Running Individual Agents
-### 🧱 Agent 1 — Semantic Interpreter
+##  3. Running Individual Agents
+###  Agent 1 — Semantic Interpreter
 **File**: src/agents/agent1_parameter_schema.py
 **Purpose**: Parse user goals into structured JSON parameter schemas.
 
@@ -149,7 +149,7 @@ python src/agents/agent2_parameter_modifier.py
 **Output**:
 outputs/modified_idfs/*.idf
 
-### 🔆 Agent 3a — Simulation Runner
+###  Agent 3a — Simulation Runner
 **File**: src/agents/agent3a_simulation_runner.py
 **Purpose**: Batch-run EnergyPlus simulations for all variants.
 
@@ -159,7 +159,7 @@ python src/agents/agent3a_simulation_runner.py
 **Output**:
 EnergyPlus .csv, .htm, .eso files in outputs/simulations/
 
-### 📊 Agent 3b — Qualitative Result Analyzer
+###  Agent 3b — Qualitative Result Analyzer
 **File**: src/agents/agent3b_result_analyzer.py
 **Purpose**: Use LLM reasoning to compare baseline vs. modified results (CSV tables).
 
@@ -169,7 +169,7 @@ python src/agents/agent3b_result_analyzer.py
 **Output**:
 outputs/results/comparison_*.json
 
-### 📈 Agent 3c — Quantitative Sensitivity Analyzer
+###  Agent 3c — Quantitative Sensitivity Analyzer
 **File**: src/agents/agent3c_sensitivity_analyzer.py
 **Purpose**: Compute numeric sensitivities and parameter impacts.
 
@@ -180,7 +180,7 @@ python src/agents/agent3c_sensitivity_analyzer.py
 outputs/results/quant_summary_*.csv
 outputs/results/quant_summary_*.md
 
-### 🔍 4. Typical Workflow Example
+###  4. Typical Workflow Example
 ```text
 1️⃣ User provides goal: “Reduce cooling load while maintaining comfort.”
 2️⃣ Agent 1 parses editable parameters (walls, roof, windows).
@@ -191,7 +191,7 @@ outputs/results/quant_summary_*.md
 ```
 Output summaries are logged in terminal and saved as .json, .csv, and .md.
 
-### 📊 5. Example Output Snapshot
+###  5. Example Output Snapshot
 Rank	Parameter	ΔCooling (%)	ΔHeating (%)	Impact Score
 1	Building_Orientation_v3	−51.9	−0.1	51.99
 2	Roof_Material_Conductivity	−30.3	+2.6	30.37
@@ -199,7 +199,7 @@ Rank	Parameter	ΔCooling (%)	ΔHeating (%)	Impact Score
 4	Window_to_Wall_Ratio_v1	+0.4	−3.6	3.64
 5	Window_to_Wall_Ratio_v2	+0.3	−2.6	2.57
 
-### 🧩 6. Reproducibility Notes
+###  6. Reproducibility Notes
 The workflow is designed to work offline once the OpenAI schema files are generated.
 
 All modified models and results include timestamps for traceability.
@@ -208,7 +208,7 @@ Paths are automatically resolved via src/config.py, so you can run any script fr
 
 Default EnergyPlus weather and IDF files are provided in sample_files/.
 
-### 🧰 7. Key Dependencies (requirements.txt)
+###  7. Key Dependencies (requirements.txt)
 ```text
 eppy>=0.5.64
 pandas>=2.2.2
@@ -218,7 +218,7 @@ python-dotenv>=1.0.1
 tqdm>=4.66.5
 ```
 
-### 🧑‍💻 8. Contact
+###  8. Contact
 Author: Huiwen Zhou
 Affiliation: University of Arizona, Civil & Architectural Engineering & Mechanics
 Email: huiwenzhou@arizona.edu
