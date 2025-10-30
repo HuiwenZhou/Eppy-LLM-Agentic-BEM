@@ -288,8 +288,8 @@ You are given an IDF editability map organized by surface categories (ExteriorWa
 
 
 if __name__ == "__main__":
-    idf_path = r"src\sample_files\iUnit_lden.idf"
-    user_goal = "Minimize total site energy consumption"
+    idf_path = r"sample_files\iUnit_Golden.idf"
+    user_goal = "reduce cooling load while maintaining comfort"
 
     print("🚀 Running parameter schema generator...\n")
     try:

@@ -13,12 +13,8 @@ Coordinates the full five-agent workflow:
     4. Agent 3b – Result Analyzer & LLM Feedback
     5. Agent 3c – Quantitative Sensitivity Analyzer
 
-This script is the central entry point for the Eppy-LLM framework.
-It allows researchers to reproduce experiments end-to-end or to
-execute individual agents for debugging and ablation studies.
-
-Author: Huiwen Zhou  
-Maintainer: @huiwenzhou  
+Author: Huiwen Zhou
+Maintainer: @huiwenzhou
 """
 
 import os
@@ -27,23 +23,22 @@ import time
 import datetime
 
 # === Global Settings ===
-USER_GOAL = "reduce heat gain through windows while maximizing daylight availability"
-DEFAULT_MODEL = "gpt-5"  # You can change to other model if needed
+USER_GOAL = "reduce cooling load while maintaining comfort"
+DEFAULT_MODEL = "gpt-5"  # You can change this if needed
 
 # === Base Directories ===
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-TOOLS_DIR = os.path.join(PROJECT_ROOT, "tools")
+AGENTS_DIR = os.path.join(PROJECT_ROOT, "agents")
 OUTPUT_DIR = os.path.join(os.path.dirname(PROJECT_ROOT), "outputs")
 RESULTS_DIR = os.path.join(OUTPUT_DIR, "results")
 
-# === Helper Function ===
+
 def run_step(step_name: str, module_name: str, user_goal: str):
     """Run each agent as a subprocess with unified goal parameter."""
     print(f"\n🚀 [START] {step_name}")
     start = time.time()
 
-    # Pass goal as CLI argument
-    command = f'python -m src.tools.{module_name} --goal "{user_goal}"'
+    command = f'python -m src.agents.{module_name} --goal "{user_goal}"'
     try:
         subprocess.run(command, shell=True, check=True)
     except subprocess.CalledProcessError as e:
@@ -64,24 +59,24 @@ def main():
     print(f"🧠 LLM MODEL: {DEFAULT_MODEL}")
     print("===================================\n")
 
-    # === Step 1: Schema Extraction ===
-    if not run_step("Agent 1 – Parameter Schema Extraction", "parameter_schema_tool", USER_GOAL):
+    # === Step 1: Agent 1 – Parameter Schema Extraction ===
+    if not run_step("Agent 1 – Parameter Schema Extraction", "agent1_parameter_schemal", USER_GOAL):
         return
 
-    # === Step 2: Parameter Modification ===
-    if not run_step("Agent 2 – Parameter Modification / IDF Generation", "parameter_modifier_tool", USER_GOAL):
+    # === Step 2: Agent 2 – Parameter Modification ===
+    if not run_step("Agent 2 – Parameter Modification / IDF Generation", "agent2_parameter_modifier", USER_GOAL):
         return
 
-    # === Step 3: Simulation Runner ===
-    if not run_step("Agent 3a – Simulation Runner", "simulation_runner_tool", USER_GOAL):
+    # === Step 3a: Simulation Runner ===
+    if not run_step("Agent 3a – Simulation Runner", "agent3a_simulation_runner", USER_GOAL):
         return
 
-    # === Step 4: Qualitative Analysis ===
-    if not run_step("Agent 3b – LLM Qualitative Analysis", "result_analysis_tool", USER_GOAL):
+    # === Step 3b: Qualitative Analysis ===
+    if not run_step("Agent 3b – LLM Qualitative Analysis", "agent3b_result_analyzer", USER_GOAL):
         return
 
-    # === Step 5: Quantitative Sensitivity ===
-    if not run_step("Agent 3c – Quantitative Sensitivity Analyzer", "quant_sensitivity_tool", USER_GOAL):
+    # === Step 3c: Quantitative Sensitivity ===
+    if not run_step("Agent 3c – Quantitative Sensitivity Analyzer", "agent3c_sensitivity_analyzer", USER_GOAL):
         return
 
     # === Final Summary ===

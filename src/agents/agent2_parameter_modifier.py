@@ -426,15 +426,18 @@ def modify_idf_smart_rules(idf_path: str, schema: dict, output_dir: str) -> list
 if __name__ == "__main__":
     print("🚀 Running Smart Rule-Based Agent 2 Parameter Modifier...\n")
 
-    output_dir = r"outputs"
+    BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
+    output_dir = os.path.join(BASE_DIR, "outputs")
     schema_path = os.path.join(output_dir, "parameter_schema_latest.json")
+
+    print("📂 Using schema:", schema_path)
 
     if not os.path.exists(schema_path):
         print("⚠️ Latest schema not found, trying to locate timestamped version...")
         schema_path = find_latest_schema(output_dir)
         print(f"✅ Found: {schema_path}\n")
 
-    idf_path = r"src\sample_files\iUnit_lden.idf"
+    idf_path = r"sample_files\iUnit_Golden.idf"
     modified_dir = os.path.join(output_dir, "modified_idfs")
 
     schema = load_json_schema(schema_path)

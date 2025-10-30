@@ -24,6 +24,11 @@ import json
 import shutil
 from dotenv import load_dotenv
 
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
+SAMPLE_DIR = os.path.join(BASE_DIR, "sample_files")
+OUTPUTS_DIR = os.path.join(BASE_DIR, "outputs")
+SIM_DIR = os.path.join(OUTPUTS_DIR, "simulations")
+RESULTS_DIR = os.path.join(OUTPUTS_DIR, "results")
 
 # ✅ Load environment variables
 dotenv_path = os.path.join(os.path.dirname(__file__), "../../.env")
@@ -148,11 +153,11 @@ def run_baseline_if_needed(idf_path: str, weather_path: str, output_root: str) -
 
 
 if __name__ == "__main__":
-    idf_path = r"src\sample_files\iUnit_Golden.idf"
-    weather_path = r"sample_files\USA_CO_Golden-NREL.724666_TMY3.epw"
-    output_root = r"outputs\simulations"
+    idf_path = os.path.join(SAMPLE_DIR, "iUnit_Golden.idf")
+    weather_path = os.path.join(SAMPLE_DIR, "USA_CO_Golden-NREL.724666_TMY3.epw")
+    output_root = SIM_DIR
 
-    print("🌱 Starting EnergyPlus Simulation Test...\n")
+    print("🚀 Starting EnergyPlus Simulation Test...\n")
 
     try:
         # ✅ Run baseline only once

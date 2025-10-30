@@ -25,6 +25,11 @@ import pandas as pd
 from dotenv import load_dotenv
 from src.llm.eppy_openai_llm import EppyOpenAILLM
 
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
+SAMPLE_DIR = os.path.join(BASE_DIR, "sample_files")
+OUTPUTS_DIR = os.path.join(BASE_DIR, "outputs")
+SIM_DIR = os.path.join(OUTPUTS_DIR, "simulations")
+RESULTS_DIR = os.path.join(OUTPUTS_DIR, "results")
 
 # ============================================================
 # 🔧 Environment Setup
@@ -129,11 +134,11 @@ def find_result_csv(folder: str) -> str:
 # 🧪 Main Batch Comparison
 # ============================================================
 if __name__ == "__main__":
-    base_dir = r"outputs\simulations"
-    results_dir = r"outputs\results"
+    base_dir = SIM_DIR
+    results_dir = RESULTS_DIR
     os.makedirs(results_dir, exist_ok=True)
 
-    user_goal = "Reduce heat gain through windows while maximizing daylight availability without changing building orientation"
+    user_goal = "reduce cooling load while maintaining comfort"
 
     print("🤖 Running EnergyPlus CSV-based comparison workflow...\n")
 

@@ -22,9 +22,14 @@ import json
 import datetime
 from io import StringIO
 from typing import Optional, List, Dict
-
 import pandas as pd
 from dotenv import load_dotenv
+
+BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "../../"))
+SAMPLE_DIR = os.path.join(BASE_DIR, "sample_files")
+OUTPUTS_DIR = os.path.join(BASE_DIR, "outputs")
+SIM_DIR = os.path.join(OUTPUTS_DIR, "simulations")
+RESULTS_DIR = os.path.join(OUTPUTS_DIR, "results")
 
 # ------------------------------------------------------------
 # Environment setup
@@ -245,8 +250,8 @@ def analyze_all(base_dir: str, results_dir: str) -> Dict:
 # Entry point
 # ------------------------------------------------------------
 if __name__ == "__main__":
-    base_dir = r"outputs\simulations"
-    results_dir = r"outputs\results"
+    base_dir = SIM_DIR
+    results_dir = RESULTS_DIR
 
     print("📐 Agent 3c – Quantitative & Sensitivity Analyzer (v0.95 Final)\n")
     try:
